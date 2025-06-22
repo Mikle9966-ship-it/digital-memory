@@ -1,17 +1,18 @@
 
 name: digital_memory
-description: A simple memory keeping app
-publish_to: 'none'
+description: A simple Flutter app to store personal memories.
+publish_to: "none"
+
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.17.0 <3.0.0"
+  sdk: ">=2.17.0 <4.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
+
   cupertino_icons: ^1.0.2
-  shared_preferences: ^2.0.15
 
 dev_dependencies:
   flutter_test:
