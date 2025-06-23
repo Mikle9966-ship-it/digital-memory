@@ -1,0 +1,1 @@
+Android platform files will be generated during real Flutter build.

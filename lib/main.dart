@@ -9,7 +9,7 @@ class DigitalMemoryApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Digital Memory',
-      theme: ThemeData(primarySwatch: Colors.indigo),
+      theme: ThemeData(primarySwatch: Colors.deepPurple),
       home: MemoryHomePage(),
     );
   }
@@ -45,7 +45,7 @@ class _MemoryHomePageState extends State<MemoryHomePage> {
             TextField(
               controller: _controller,
               decoration: InputDecoration(
-                labelText: 'Add a memory',
+                labelText: 'Enter memory',
                 suffixIcon: IconButton(
                   icon: Icon(Icons.add),
                   onPressed: _addMemory,
@@ -58,7 +58,7 @@ class _MemoryHomePageState extends State<MemoryHomePage> {
               child: ListView.builder(
                 itemCount: _memories.length,
                 itemBuilder: (context, index) => ListTile(
-                  leading: Icon(Icons.memory),
+                  leading: Icon(Icons.bookmark),
                   title: Text(_memories[index]),
                 ),
               ),
